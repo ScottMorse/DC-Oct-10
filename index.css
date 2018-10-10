@@ -1,0 +1,83 @@
+html {
+    font-family: "Source Sans Pro",Futura,serif;
+    background-color: rgb(255, 253, 236);
+    color: rgb(114, 65, 65);
+    line-height: 1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#page-wrap {
+    width: 750px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#teaser {
+    font-size: 20px;
+    font-family: serif;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 600;
+    width: 750px;
+    border-bottom: 3px double rgb(114, 65, 65);
+    padding-bottom: 20px;
+}
+
+.item{
+    display: flex;
+}
+
+.item-image {
+    height: 200px;
+    width: 200px;
+}
+
+#menu-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-text {
+    width: 300px;
+    margin: 0 50px 0 50px;
+}
+
+#menu-area {
+    margin-bottom: 200px;
+}
+
+@media screen and (max-width: 768px){
+    #page-wrap, h2{
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #teaser {
+        max-width: 420px;
+        text-align: left;
+        text-indent: 30px;
+        margin: 15px;
+    }
+
+    .item{
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0 20px 0;
+        border-bottom: 2px solid rgb(114,65,65);
+        margin: 10px 0 20px 0;
+    }
+}
+
